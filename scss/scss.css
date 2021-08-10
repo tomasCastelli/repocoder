@@ -1,0 +1,307 @@
+@charset "UTF-8";
+body {
+  background-color: black;
+}
+
+* {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.alineacionCentral {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+.centroNegro {
+  text-align: center;
+  color: white;
+}
+
+form {
+  color: gray;
+  background-color: black;
+}
+
+p {
+  color: white;
+  padding-left: 10px;
+}
+
+table {
+  color: white;
+}
+
+.tablaArquitectos {
+  text-transform: capitalize;
+}
+
+.parrafo {
+  color: #8b5858;
+  line-height: 20px;
+}
+
+.formulario {
+  border: solid white;
+  font-size: 32px;
+  padding: 20px;
+  width: 570px;
+  margin-left: 10px;
+  background-color: black;
+}
+
+.formulario:focus {
+  width: 100px;
+  font-size: 40px;
+}
+
+.menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.textoFormulario {
+  color: grey;
+}
+
+article {
+  margin-left: 10px;
+}
+
+.padreFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 400px;
+  color: grey;
+}
+
+.hijo {
+  width: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.arquitectura {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  background-color: honeydew;
+}
+
+.diseño {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: hotpink;
+}
+
+.plomeria {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: khaki;
+}
+
+.flexPadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  height: 600px;
+  color: lavenderblush;
+  border: white solid;
+  text-align: center;
+}
+
+.empresa {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: teal;
+}
+
+.Arquitectos {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  background-color: yellow;
+}
+
+.conquien {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: purple;
+}
+
+.donde {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  background-color: red;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[4];
+      grid-template-columns: repeat(4, 300px);
+  -ms-grid-rows: (150px)[4];
+      grid-template-rows: repeat(4, 150px);
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-auto-flow: row;
+      grid-template-areas: "img1 img1 img2 logo" "img1 img1 img2 img3" "img5 img4 img4 img3" "img5 img4 img4 img3";
+}
+
+.img1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img1;
+  background-image: url(../imagenes/Quincho/quincho.jpeg);
+  background-position: center;
+}
+
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: logo;
+  background-image: url(../imagenes/Presentacion/logojc.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.img5 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img5;
+  background-image: url(../imagenes/Guayaquil/cocinadespues.jpeg);
+  background-position: center;
+}
+
+.img2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: img2;
+  background-image: url(../imagenes/Quincho/quincholuces.jpeg);
+  background-position: center;
+}
+
+.img3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: img3;
+  background-image: url(../imagenes/edificio.jpeg);
+  background-position: center;
+}
+
+.img4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: img4;
+  background-image: url(../imagenes/cocinanueva.jpeg);
+  background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    -ms-grid-columns: (300px)[3];
+        grid-template-columns: repeat(3, 300px);
+    -ms-grid-rows: (150px)[5];
+        grid-template-rows: repeat(5, 150px);
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-auto-flow: row;
+        grid-template-areas: "img3 img4 img4" "img3 img4 img4" "img3 logo img2" "img1 img1 img2" "img1 img1 img2";
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: (200px)[2];
+        grid-template-columns: repeat(2, 200px);
+    -ms-grid-rows: (100px)[7];
+        grid-template-rows: repeat(7, 100px);
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-auto-flow: row;
+        grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img2 img3" "img2 img3" "logo img5" "img4 img5";
+  }
+}
+
+.arquiPresentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 400px;
+  position: top;
+}
+
+.arquiPresentacion .lucas {
+  font-size: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 300px;
+}
+
+.arquiPresentacion .julieta {
+  font-size: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-left: 300px;
+}
+
+.arquiPresentacion .imagenes1 {
+  width: 200px;
+  height: 250px;
+}
+
+.arquiPresentacion .imagenes2 {
+  width: 200px;
+  height: 200px;
+}
+/*# sourceMappingURL=scss.css.map */
